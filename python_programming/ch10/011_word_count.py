@@ -13,8 +13,10 @@ def count_words(filename):
         with open(filename) as f_obj:
             contents = f_obj.read()
     except FileNotFoundError:
-        msg = "Sorry, the file " + filename + " does not exist."
-        print(msg)
+        # msg = "Sorry, the file " + filename + " does not exist."
+        # print(msg)
+        # 异常时不做处理.
+        pass
     else:
         # 计算文件大致包含多少个单词.
         words = contents.split()
