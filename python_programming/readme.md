@@ -14,6 +14,13 @@ To: page_205.
 
 #### ch11-测试代码.
 From:page_206.  
+To: page_218.
+
+#### ch15-生成数据.
+From:page_304.  
 To: page_.
+
+% pip install matplotlib
+
 
 

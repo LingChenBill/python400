@@ -133,3 +133,4 @@ dmypy.json
 #data/
 *.xml
 *.iml
+*.png
