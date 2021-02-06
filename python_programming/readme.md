@@ -18,9 +18,9 @@ To: page_218.
 
 #### ch15-生成数据.
 From:page_304.  
-To: page_.
+To: page_330.
 
-% pip install matplotlib
-
+% pip install matplotlib  
+% pip install pygal  
 
 
