@@ -27,4 +27,6 @@ To: page_330.
 From:page_331.  
 To: page_.
 
+#### 安装地图插件.
+pip install pygal_maps_world
 
