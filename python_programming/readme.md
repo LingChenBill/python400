@@ -25,8 +25,13 @@ To: page_330.
 
 #### ch16-下载数据.
 From:page_331.  
-To: page_.
+To: page_356.
 
 #### 安装地图插件.
 pip install pygal_maps_world
 
+#### ch17-使用API.
+From:page_357.  
+To: page_.
+
+pip install requests  
