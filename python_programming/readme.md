@@ -32,6 +32,6 @@ pip install pygal_maps_world
 
 #### ch17-使用API.
 From:page_357.  
-To: page_.
+To: page_373.
 
 pip install requests  
