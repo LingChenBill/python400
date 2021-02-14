@@ -32,6 +32,44 @@ pip install pygal_maps_world
 
 #### ch17-使用API.
 From:page_357.  
-To: page_373.
+To: page_373.  
 
 pip install requests  
+
+#### ch18-Django入门.
+From:page_374.  
+To: page_.
+
+#### 创建工程环境.
+mkdir lc_learning_log
+
+% python -m venv ll_env  
+
+激活虚拟环境.  
+% source ll_env/bin/activate  
+停止使用虚拟环境.  
+% deactivate  
+
+安装Django.  
+% pip install Django  
+
+创建Django项目.  
+% django-admin.py startproject lc_learning_log .  
+
+创建数据库.  
+% python manage.py migrate  
+
+启动项目.  
+% python manage.py runserver  
+
+指定端口.  
+python manage.py runserver 8001  
+
+创建应用程序.  
+% cd python_programming/lc_learning_log  
+% source ll_env/bin/activate  
+% python manage.py startapp lc_learning_logs
+
+激活模型.  
+% python manage.py makemigrations lc_learning_logs  
+% python manage.py migrate  

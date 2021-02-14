@@ -135,3 +135,5 @@ dmypy.json
 *.iml
 *.png
 *.svg
+ll_env/
+*.sqlite3
