@@ -73,3 +73,20 @@ python manage.py runserver 8001
 激活模型.  
 % python manage.py makemigrations lc_learning_logs  
 % python manage.py migrate  
+
+创建超级用户.  
+% python manage.py createsuperuser  
+admin  
+123456  
+
+Django shell  
+% python manage.py shell  
+from lc_learning_logs.models import Topic  
+Topic.objects.all()  
+topics = Topic.objects.all()  
+for topic in topics:  
+    print(topic.id, topic)
+t = Topic.objects.get(id=1)  
+t.text  
+t.date_added  
+t.entry_set.all()  
