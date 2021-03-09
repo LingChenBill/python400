@@ -15,4 +15,10 @@ urlpatterns = [
     path('topics/', views.topics, name='topics'),
     # 显示特定主题的详细页面.
     re_path(r'^topics/(?P<topic_id>\d+)/$', views.topic, name='topic'),
+    # 新添加主题的页面.
+    re_path(r'^new_path/$', views.new_topic, name='new_topic'),
+    # 添加新条目的页面.
+    re_path(r'^new_entry/(?P<topic_id>\d+)/$', views.new_entry, name='new_entry'),
+    # 用于编辑条目的页面.
+    re_path(r'^edit_entry/(?P<entry_id>\d+)/$', views.edit_entry, name='edit_entry'),
 ]

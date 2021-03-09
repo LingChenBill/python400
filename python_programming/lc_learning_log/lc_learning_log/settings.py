@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # 我的程序.
     'lc_learning_logs',
+    'users'
 ]
 
 MIDDLEWARE = [

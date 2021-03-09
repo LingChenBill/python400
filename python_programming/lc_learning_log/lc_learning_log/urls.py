@@ -18,5 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # 包含应用程序users定义的url.
+    path('users/', include(('users.urls', 'users'), namespace='users')),
     path('', include(('lc_learning_logs.urls', 'lc_learning_logs'), namespace='lc_learning_logs')),
 ]

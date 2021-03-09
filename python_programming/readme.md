@@ -38,7 +38,7 @@ pip install requests
 
 #### ch18-Django入门.
 From:page_374.  
-To: page_.
+To: page_400.
 
 #### 创建工程环境.
 mkdir lc_learning_log
@@ -90,3 +90,10 @@ t = Topic.objects.get(id=1)
 t.text  
 t.date_added  
 t.entry_set.all()  
+
+#### ch19-用户账户.
+From:page_401.  
+To: page_.
+
+##### 新建用户程序:  
+lc_learning_log % python manage.py startapp users
