@@ -93,7 +93,35 @@ t.entry_set.all()
 
 #### ch19-用户账户.
 From:page_401.  
-To: page_.
+To: page_427.
 
 ##### 新建用户程序:  
 lc_learning_log % python manage.py startapp users
+
+##### 用户登录界面.
+http://127.0.0.1:8000/users/login/
+
+lc_zhu
+
+查看user:  
+lc_learning_log % python manage.py shell  
+from django.contrib.auth.models import User  
+User.objects.all()  
+for user in User.objects.all():  
+  print(user.username, user.id)  
+
+##### 迁移数据库.
+lc_learning_log % python manage.py makemigrations lc_learning_logs  
+1  
+1  
+lc_learning_log % python manage.py migrate  
+
+##### 验证主题所属用户.
+lc_learning_log % python manage.py shell  
+from lc_learning_logs.models import Topic  
+for topic in Topic.objects.all():  
+  print(topic, topic.owner)  
+
+#### ch20-设置应用程序的样式并对其进行部署.
+From:page_428.  
+To: page_.

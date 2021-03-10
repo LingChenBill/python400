@@ -8,10 +8,14 @@ from django.contrib.auth.views import LoginView
 from . import views
 
 urlpatterns = [
-    # (2_0.W001) Your URL pattern '^$' has a route that contains '(?P<',
-    # begins with a '^', or ends with a '$'. This was likely an oversight when migrating to django.urls.path().
-    # path(r'^$', views.index),
 
-    # 主页.
-    re_path(r'^login/$', login, {'template_name': 'users/login.html'}, name='login'),
+    # users登录页面.
+    # re_path(r'^login/$', login, {'template_name': 'users/login.html'}, name='login'),
+    re_path(r'^login/$', LoginView.as_view(template_name='users/login.html'), name='login'),
+
+    # 注销.
+    re_path(r'^logout/$', views.logout_view, name='logout'),
+    # 注册页面.
+    re_path(r'^register/$', views.register, name='register'),
+
 ]
